@@ -1,0 +1,5 @@
+banana,5
+apple,2
+mango,9
+lemon,10
+lemons,200
