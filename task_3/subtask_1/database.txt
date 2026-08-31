@@ -1,0 +1,3 @@
+type=Book|title=Dune|status=AVAILABLE|author=Frank Herbert|isbn=9780441013593
+type=DVD|title=Inception|status=CHECKED_OUT|director=Christopher Nolan
+type=Magazine|title=National Geographic|status=AVAILABLE|issue=2026-08
