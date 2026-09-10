@@ -1,0 +1,14 @@
+[workspace]
+authors = ["Yahia Amr <yahiaelshenawy51@gmail.com>"]
+channels = ["conda-forge", "https://prefix.dev/robostack-jazzy"]
+name = "ros2_Task3"
+platforms = ["win-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+ros-jazzy-ros-base = ">=0.11.0,<0.12"
+colcon-common-extensions = ">=0.3.0,<0.4"
+ros-jazzy-turtlesim = ">=1.8.4,<2"
+ros-jazzy-std-srvs = ">=5.3.8,<6"
