@@ -1,0 +1,21 @@
+<circuit version="1.1.0-SR2" rev="260312" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="MCU" CircId="mega32-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-8,-76" rotation="0" hflip="1" vflip="1" label="mega32-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="8 MHz" Program="../../../Desktop/session1_Task/Task1/.pio/build/atmega32/firmware.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Wdt_enabled="false" MainMcu="true" SerialMon="-1" />
+
+<item itemtype="Led" CircId="Led-2" mainComp="false" Show_id="false" Show_Val="false" Pos="-104,-68" rotation="180" hflip="1" vflip="1" label="Led-2" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Red" Grounded="false" Threshold="1.8 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-3" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-56,-68" rotation="0" hflip="1" vflip="1" label="Resistor-3" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="110 Ω" />
+
+<item itemtype="Ground" CircId="Ground-6" mainComp="false" Show_id="false" Show_Val="false" Pos="-120,-12" rotation="0" hflip="1" vflip="1" label="Ground-6" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Voltage Source" CircId="Voltage Source-7" mainComp="false" ShowProp="MaxValue" Show_id="false" Show_Val="true" Pos="-168,4" rotation="0" hflip="1" vflip="1" label="Voltage Source-7" idLabPos="-32,-48" labelrot="0" valLabPos="-8,30" valLabRot="0" Running="true" Value_Volt="5 V" MaxValue="5 V" MinValue="0 V" />
+
+<item itemtype="Connector" uid="Connector-8" startpinid="Resistor-3-rPin" endpinid="mega32-1-PORTB0" pointList="-40,-68,-16,-68" />
+
+<item itemtype="Connector" uid="Connector-9" startpinid="Resistor-3-lPin" endpinid="Led-2-lPin" pointList="-72,-68,-88,-68" />
+
+<item itemtype="Connector" uid="Connector-10" startpinid="Led-2-rPin" endpinid="Ground-6-Gnd" pointList="-120,-68,-120,-28" />
+
+<item itemtype="Connector" uid="Connector-11" startpinid="Voltage Source-7-outPin" endpinid="mega32-1-RST" pointList="-140,20,-24,20,-24,-4,-16,-4" />
+
+</circuit>

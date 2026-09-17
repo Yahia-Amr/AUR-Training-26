@@ -1,0 +1,21 @@
+<circuit version="1.1.0-SR2" rev="260312" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="MCU" CircId="mega32-1" mainComp="false" Show_id="true" Show_Val="false" Pos="0,-140" rotation="0" hflip="1" vflip="1" label="mega32-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="8 MHz" Program="../../../Desktop/session1_Task/Task2/.pio/build/atmega32/firmware.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Wdt_enabled="false" MainMcu="true" SerialMon="-1" />
+
+<item itemtype="Resistor" CircId="Resistor-2" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-32,-124" rotation="0" hflip="1" vflip="1" label="Resistor-2" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Voltage Source" CircId="Voltage Source-3" mainComp="false" ShowProp="MaxValue" Show_id="false" Show_Val="true" Pos="-100,-40" rotation="0" hflip="1" vflip="1" label="Voltage Source-3" idLabPos="-32,-48" labelrot="0" valLabPos="-8,30" valLabRot="0" Running="true" Value_Volt="5 V" MaxValue="5 V" MinValue="0 V" />
+
+<item itemtype="Led" CircId="Led-4" mainComp="false" Show_id="false" Show_Val="false" Pos="-80,-124" rotation="180" hflip="1" vflip="1" label="Led-4" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="Ground" CircId="Ground-5" mainComp="false" Show_id="false" Show_Val="false" Pos="-140,-124" rotation="90" hflip="1" vflip="1" label="Ground-5" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Connector" uid="Connector-1" startpinid="Voltage Source-3-outPin" endpinid="mega32-1-RST" pointList="-72,-24,-16,-24,-16,-68,-8,-68" />
+
+<item itemtype="Connector" uid="Connector-2" startpinid="Resistor-2-lPin" endpinid="Led-4-lPin" pointList="-48,-124,-64,-124" />
+
+<item itemtype="Connector" uid="Connector-3" startpinid="Resistor-2-rPin" endpinid="mega32-1-PORTB3" pointList="-16,-124,-16,-108,-8,-108" />
+
+<item itemtype="Connector" uid="Connector-16" startpinid="Ground-5-Gnd" endpinid="Led-4-rPin" pointList="-124,-124,-96,-124" />
+
+</circuit>
